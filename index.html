@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="utf-8" />
+    <title>Strona internetowa</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body>
+    <div id="container">
+        <header>
+            <center>
+                <div class="pasek">
+                    <a href="index.html"><img id="logo" src="logo.png" alt="logo"></a>
+                    <a href="https://www.premierleague.com/tables" target="_blank">Tabela Premier League</a>
+                    <a href="https://www.laliga.com/en-GB/laliga-santander/standing" target="_blank">Tabela LaLiga</a>
+                    <div class="klikniecie">
+                        <button class="przycisk" onclick="funkcja()">
+                            Reszta lig
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="klikniecie-zawartosc" id="lista">
+                            <a href="https://www.ekstraklasa.org/tabela/sezon" target="_blank">Ekstraklasa</a>
+                            <a href="https://www.ligue1.com/ranking" target="_blank">Ligue 1</a>
+                            <a href="https://www.seriea.pl/tabela/" target="_blank">Serie A</a>
+                        </div>
+                    </div>
+                    <script>
+                        function funkcja() {
+                            document.getElementById("lista").classList.toggle("pokaz");
+                        }
+                        window.onclick = function (e) {
+                            if (!e.target.matches('.przycisk')) {
+                                var lista = document.getElementById("lista");
+                                if (lista.classList.contains('pokaz')) {
+                                    lista.classList.remove('pokaz');
+                                }
+                            }
+                        }
+                    </script>
+                </div>
+            </center>
+        </header>
+        <!-- all other page zawartosc -->
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<center><div id="wrapper">
+        <div class="zdjecie-text">
+        <a href="https://www.sport.pl/pilka/7,65082,29087228,robert-lewandowski-ratuje-fc-barcelone-gol-w-93-minucie.html" target="_blank">
+           <img src="lewandowski.jpg" alt="gol lewandowskiego" class="center"/>
+            <div class="bottom-left">
+                Lewandowski znów strzela!<br />
+                Polak po raz kolejny melduje się jako strzelec bramki, lecz tym razem daje on bardzo cenne zwycięstwo barcelonie.
+            </div>
+        </div>
+        </a>
+		<div class="zdjecie-text-2">
+        <a href="https://polski-sport.pl/skandal-tuz-przed-mistrzostwami-swiata-katar-przekupil-ekwador/" target="_blank">
+           <img src="worldcup.jpg" alt="Mistrzostwa świata" class="center"/>
+            <div class="bottom-left">
+                Mistrzostwa świata ustawione!?<br />
+                Z kataru docierają do nas informacje o rzekomym przekupieniu drużyny przeciwnej aby gospodarz wygrał!
+            </div>
+        </div>
+        </a>
+		</div>
+		</center>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <footer id="footer">
+            <p>Stworzył: Michał Woźniak</p>
+            <p>Numer w dzienniku: 36</p>
+            <p>Klasa: 4ti4</p>
+        </footer>
+    </div>
+</body>
+</html>
